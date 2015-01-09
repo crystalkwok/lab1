@@ -1,0 +1,312 @@
+@charset 'UTF-8';
+
+body {
+font-family: 'Lato', sans-serif;
+}
+
+body p{
+	font-size:17px;
+}
+
+.jumbotron #title{
+    font-size:40px;
+    /*margin-left:8%;
+    margin-right:8%;*/
+       letter-spacing: 0.15em;
+    color:#ffffff;
+    font-family:'Montserrat', sans-serif;
+    text-align:center;
+}
+
+
+#catchphrase{
+    text-align: center;
+    font-weight:700;
+    color:#ffffff;
+}
+
+hr{
+    color:#000000;
+    font-weight:500;
+}
+
+.jumbotron {
+	background-color: #013042;
+	position:relative;
+	top:40px;
+	width:100%;
+    height:82vh;
+}
+
+.jumbotron a{
+    font-size:18px;
+    color:#f6deac
+}
+
+.jumbotron a:hover{
+    text-decoration: none;
+    color:#82d3a5;
+}
+
+
+
+
+.triangle {
+	 width: 0;
+    height: 0;
+    border: solid 60px ;
+    border-color: #013042 transparent transparent transparent;
+        margin-left:45%;
+    margin-right:50%;
+}
+
+.trianglerec{
+	left:50%;
+	background-color:#fabd76;
+}
+
+.left{
+    float:left;   
+}
+
+.right{
+    float:right;
+}
+
+.motivation{
+background-color:#fabd76;
+}
+
+.motivation p{
+    color:#000000;
+    font-size:17px;
+    line-height: 220%;
+}
+
+.motivation a{
+    color:#1E5754;
+    text-decoration:none;
+}
+
+.motivation a:hover{
+    text-decoration:none;
+    color:#ffffff;
+}
+
+#crownlogo{
+    width:100%;
+    height:100%;
+    margin-top:5%;
+}
+
+
+.features p{
+    color:#000000;
+    font-size:16px;
+}
+
+.feature_title{ 
+    background-color:#2f2f2f;
+}
+
+
+.features {
+    background-color:#ffffff;
+}
+
+
+.features p{
+    line-height:190%;
+}
+
+.timeline img{
+    margin-bottom:40px;
+}
+
+.small {
+    display:none;
+}
+
+#lightbox_normal img{
+    height:180px;
+}
+
+#lightbox_normal .image_title {
+	width: 200px; height: 200px;
+}
+
+
+.skip a{
+    text-align:center;
+    font-size:15px;
+}
+
+.feature_description a, .description a{
+    color:#db5d58;
+    font-weight:700;
+}
+
+.features h2{
+     color:#ffffff;
+    padding:8px;
+    font-family:'Montserrat', sans-serif;
+     letter-spacing: 0.15em;
+}
+
+
+
+.features a:hover{
+    text-decoration: none;
+    color:#82d3a5;
+}
+
+.feature_description {
+    display:none;
+}
+
+#why {
+    font-weight:700;
+    letter-spacing: 0.15em;
+    font-size:20px;
+}
+
+#assignments_tests .feature_title, #event_class .feature_title, #process .feature_title{
+    background-color: #616161;
+}
+
+#goals, #assignments_tests, #todo, #event_class, #timeline, #process, #personal {
+    text-decoration:none;
+}
+
+
+@media only screen and (max-width:1250px){
+ .jumbotron a{
+        font-size:17px;   
+    }
+
+}
+
+
+@media only screen and (max-width:700px){
+    #lightbox_normal img{
+        height:150px;
+    }   
+    
+    #lightbox_normal .image_title {
+        width: 170px; height: 170px;
+    }
+}
+
+
+@media only screen and (min-width:1790px){
+
+    	.jumbotron{
+		height:85vh;
+	}
+
+
+    
+}
+
+@media only screen and (min-width:2100px){
+
+    
+    	.jumbotron{
+		height:90vh;
+	}
+
+}
+
+
+
+@media only screen and (max-height: 600px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+    
+    @media only screen and (min-height:700px){
+        .jumbotron img {
+            margin-top:4%;    
+        }
+        
+    }
+    
+    @media only screen and (min-height:850px){
+        .jumbotron img {
+            margin-top:8%;   
+        }
+    }
+
+@media only screen and (min-height:1100px){
+        .jumbotron img {
+            margin-top:20%;   
+        }
+}
+    
+    
+    @media only screen and (min-height:1300px){
+        .jumbotron img {
+            margin-top:22%;   
+        }
+    }
+
+ @media only screen and (min-height:1600px){
+        .jumbotron img {
+            margin-top:38%;   
+        }
+    }
+
+@media only screen and (max-width:995px){
+
+
+    
+ .large{
+     display:none;
+ }
+    
+    .small {
+        display:block;   
+    }
+    
+    .picleft, .picright{
+        width:100%;
+        height:100%;
+        float:none;
+    }
+    
+    .col-sm-12, .col-xs-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10{
+        margin:15px;   
+    }
+    
+    .right{
+        float:none;   
+    }
+/*what nav bar changes*/
+    .jumbotron{
+		top: -20px;
+        height:100%;
+	}
+
+    .trianglerec{
+		margin-top:-52px;
+	}
+    
+    .motivation {
+        margin-top: -2px;   
+    }
+ /*end change*/   
+    .jumbotron a{
+        font-size:19px;   
+    }
+
+    
+    .features p {
+        line-height:160%;   
+    }
+    
+    .jumbotron img {
+        margin-top:0%;   
+    }
+
+}

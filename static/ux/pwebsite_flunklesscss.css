@@ -1,0 +1,565 @@
+@charset 'UTF-8';
+
+body {
+font-family:'Lato', sans-serif;
+}
+
+body p{
+    line-height:165%;
+}
+
+.description a, .jumbotron a{
+	color:#82d3a5;
+	text-decoration:none;
+    font-size:17px;
+}
+
+.description a:hover, .jumbotron a:hover{
+    text-decoration: none;
+    color:#ecc476;
+}
+
+
+.skip{
+	color:#3a828b;
+	text-decoration:none;
+    font-size:16px;
+}
+
+
+.problem p{
+	font-family:'Montserrat', sans-serif;
+}
+
+
+.problem_content2 a{
+	color:#82d8e3;
+    font-weight:400;
+}
+
+.problem_content2 a:hover{
+	text-decoration:none;
+	color:#ecc476;
+}
+
+#left{
+  float:left;  
+    height:198px;
+    margin-left:45px;
+    padding-top:10px;
+}
+
+#right{
+    float:right;
+    height:198px;
+    margin-right:50px;
+    padding-top:10px;
+}
+
+
+
+.jumbotron {
+	background-color: #112241;
+	position:relative;
+	top:30px;
+	width:100%;
+    height:82vh;
+}
+
+.jumbotron #title{
+	font-size:26px;
+	font-family:'Montserrat', sans-serif;
+            letter-spacing: 0.15em;
+}
+
+
+
+.triangle {
+	 width: 0;
+    height: 0;
+    border: solid 60px ;
+    border-color: #112241 transparent transparent transparent;
+    margin-left:45%;
+    margin-right:50%;
+}
+
+
+.trianglerec{
+	left:50%;
+	background-color:#606061;
+}
+
+.description {
+    background-color:#606061;
+}
+
+.description p{
+	font-size:18px;
+    color:#ffffff;
+    font-weight:300;
+}
+
+.description img{
+    margin-top:1%;
+}
+
+
+
+
+/*table{
+	text-align:center;
+	width:100%;
+}
+
+td{
+	padding:10px;
+}*/
+
+.line{
+	float:left;
+}
+
+#next{
+    float:right;
+}
+
+.circle{
+	border-radius:50%;
+	background-color:#000000;
+	height:40px;
+	width:40px;
+	position:relative;
+	right:18px;
+	top:10px;
+}
+
+.problem p{
+	font-size: 27px;
+}
+
+.content p{
+	font-size:16px;
+}
+
+#problem_methods{
+	font-size:15px;
+}
+
+#affinity{
+height:100%;
+width:100%;
+    margin-left:-20px;
+}
+
+.content{
+	padding:25px;
+}
+
+
+.problem_content1, .problem_content3, .problem_content5{
+	background-color: #ddd5fb;
+}
+
+.problem_content2, .problem_content4, .problem_content6{
+	background-color:#606061;
+}
+
+.problem_content2 p, .problem_content4 p, .problem_content6 p{
+    color:#ffffff;
+    font-weight:300;
+}
+
+.content_small{
+	display:none;
+}
+
+.content img{
+    width:140px;
+}
+
+#content5_title{
+ font-size:18px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+}
+
+
+/*attempt lightbox*/
+#affinity_lightbox ul li, #vision_pp_lightbox ul li, #final_lightbox ul li{
+	float: left;
+	padding: 10px;
+	/*background: #fff;*/
+	/*margin: 0 20px 20px 0;*/
+    margin-left:-20px;
+	list-style-type: none;
+	position: relative; /*change*/
+	cursor: pointer;
+    background-color:inherit;
+}
+/*No right margin for images in the 2nd column*/
+/*#concentration_lightbox ul li:nth-child(even) {
+	margin-right: 0;
+}*/
+/*#affinity_lightbox ul li img,*/ #vision_pp_lightbox ul li img, #final_lightbox ul li img{
+	display: inline;
+    float:left;
+    margin:10px;
+}
+
+/*Image titles*/
+/*.problem_content2 #affinity_lightbox .image_title{
+	width: 100%; height: 250px;
+    margin-left:-20px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0;
+	display: table;
+	//Hover effect - default state
+	opacity: 0;
+	transition: all 0.5s;
+}*/
+
+#vision_pp_lightbox .image_title, #final_lightbox .image_title{
+	width: 140px; height: 140px;
+    margin-left:20px;
+    margin-top:20px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0;
+	display: table;
+	/*Hover effect - default state*/
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+/*.problem_content4 #affinity_lightbox .image_title {
+	width: 100%; height: 100%;
+    margin-top:20px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0;
+	display: table;
+	//Hover effect - default state
+	opacity: 0;
+	transition: all 0.5s;
+}*/
+
+#affinity_lightbox .title, #vision_pp_lightbox .title, #final_lightbox .title{
+    display:none;
+}
+/*Zoom icon over each title using iconfont and pseudo elements*/
+#affinity_lightbox .title::before, #vision_pp_lightbox .title::before, #final_lightbox .title::before{
+	/*content: 'L';*/
+	font-family: websymbols;
+	font-size: 24px;
+	color: #fff;
+	opacity: 0.5;
+	display: block;
+	line-height: 36px;
+}
+/*Hover states*/
+/*#affinity_lightbox li:hover{
+	box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.75);
+}*/
+#affinity_lightbox li:hover .image_title, #vision_pp_lightbox li:hover .image_title, #final_lightbox li:hover .image_title{
+	opacity: 1;
+}
+#affinity_lightbox li:hover .title, #vision_pp_lightbox li:hover .title, #final_lightbox li:hover .title{
+	transform: scale(1);
+}
+
+/*Lets change the iconfont to websymbols since entypo has some issues with rendering on windows*/
+@font-face {
+	font-family: websymbols;
+	src: url("http://thecodeplayer.com/uploads/fonts/websymbols.eot");
+	src: url('http://thecodeplayer.com/uploads/fonts/websymbols.eot?#iefix') format('embedded-opentype'),
+     url('http://thecodeplayer.com/uploads/fonts/websymbols.woff') format('woff'),
+     url('http://thecodeplayer.com/uploads/fonts/websymbols.ttf') format('truetype'),
+	 url('http://thecodeplayer.com/uploads/fonts/websymbols.svg#WebSymbolsRegular') format('svg');
+}
+
+
+
+/*Lightbox element style*/
+.lb_backdrop {
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+/*The canvas contains the larger image*/
+.lb_canvas {
+	background: rgba (0,0,0,0.9);
+	width: 50px; height: 50px;
+	position: fixed;
+	top: 0; left: 0; /*later be centered by jquery*/
+	/*box-shadow: 0 0 5px 5px black;*/
+	padding: 10px;
+}
+
+/*A separate class for loading GIF, for easy Jquery handling*/
+.lb_canvas.loading {
+	background: black url("http://thecodeplayer.com/uploads/media/loading.gif") center center no-repeat;
+}
+/*Lightbox Controls*/
+.lb_controls {
+	width: 400px; 
+	background: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	bottom: 10px;
+	color: white;
+	/*To horizontally center it*/
+	left: 0; right: 0; margin: 0 auto; 
+}
+.lb_controls span {
+	line-height: 30px;
+	height: 30px;
+}
+.lb_controls span.inactive {
+	opacity: 0.25;
+}
+.lb_previous, .lb_next {
+	position: absolute;
+	top: 0;
+	padding: 5px 12px;
+	font-family: websymbols;
+	font-size: 14px;
+	background: black;
+	cursor: pointer;
+}
+.lb_previous {
+	left: 0;
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lb_next {
+	right: 0;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lb_title {
+	text-align: center;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+/*end attempt lightbox*/
+
+
+@media only screen and (max-width:1200px){
+	.problem_content3 img{
+		width:110px;
+	}
+
+    
+    #left{
+        height:175px;
+    }
+    
+    #right{
+        height:175px;   
+    }
+    
+    #vision_pp_lightbox .image_title{
+    width: 110px; height: 110px;
+    }
+}
+
+
+
+    
+@media only screen and (min-width:1250px){
+   .jumbotron{
+       height:82vh;
+   }
+    
+}
+
+@media only screen and (min-width:1500px){
+   .jumbotron{
+       height:85vh;
+   }
+
+
+}
+
+@media only screen and (min-width:1700px){
+
+
+}
+
+@media only screen and (min-width:2000px){
+     .jumbotron{
+       height:90vh;
+   }
+
+}
+
+@media only screen and (min-width: 2700px){
+
+}
+
+
+
+@media only screen and (max-height: 600px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+
+@media only screen and (min-height:600px){
+    .jumbotron img {
+        margin-top:3%;   
+    }
+}
+    
+@media only screen and (min-height:700px){
+        .jumbotron img {
+            margin-top:6%;    
+        }
+     
+}
+
+@media only screen and (min-height:700px) and (max-width:990px){
+    .jumbotron img {
+        margin-top:0%;   
+    }
+}
+    
+    @media only screen and (min-height:850px){
+        .jumbotron img {
+            margin-top:11%;   
+        }
+    }
+
+@media only screen and (min-height:1100px){
+        .jumbotron img {
+            margin-top:15%;   
+        }
+}
+    
+    
+    @media only screen and (min-height:1300px){
+        .jumbotron img {
+            margin-top:22%;   
+        }
+    }
+
+ @media only screen and (min-height:1600px){
+        .jumbotron img {
+            margin-top:38%;   
+        }
+    }
+
+
+@media only screen and (max-width:990px){
+    .jumbotron {
+        height:100%;   
+    }
+    
+    
+    .problem_content3 img{
+      width:150px;   
+    }
+    
+    #vision_pp_lightbox .image_title{
+        width:150px; height: 150px;  
+    }
+    
+    #left{
+        height:300px;   
+    }
+    
+    #right{
+        height:300px;   
+    }
+    
+    .jumbotron a{
+        font-size:25px;   
+    }
+    
+    
+	.content_big{
+		display:none;
+	}
+
+	.content_small{
+		display:block;
+	}
+
+	.total{
+		margin-left:30px;
+	}
+
+	.jumbotron p{
+		font-size:25px;
+	}
+    
+    .jumbotron a{
+        font-size:26px;   
+    }
+
+	.jumbotron #title{
+		font-size:35px;
+
+	}
+
+    /*change what nav bar affects*/
+		.jumbotron{
+		top: -20px;
+	}
+
+    .trianglerec{
+		margin-top:-52px;
+	}
+
+	/*end change navbar*/
+	.content p{
+		font-size:22px;
+        padding-left:30px;
+	}
+    
+    .content img{
+        margin-left:30px;   
+    }
+    
+    .content li{
+        font-size:17px;
+        padding-left:30px;
+    }
+    
+    #problem_methods{
+        font-size: 16px; 
+    }
+    
+    .problem_content3 .main_ideas_list li{
+        font-size:17px;   
+    }
+    
+    #content5_title{
+        font-size: 22px;  
+    }
+    
+    .line{
+        display:none;   
+    }
+    
+    #final_lightbox ul li img{
+        background:#82d3a5;
+    }
+    
+    .skip{
+        display:none;   
+    }
+    
+        .description {
+        margin-top: -2px;   
+    }
+    
+    .jumbotron img {
+        margin-top:0%;   
+    }
+
+
+}
+
